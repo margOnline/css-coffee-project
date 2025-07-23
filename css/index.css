@@ -25,7 +25,8 @@
     --h4: calc(var(--h5) * var(--scale));
     --h5: calc(var(--h6) * var(--scale));
     --h6: var(--base-size);
-    --sm-font-size: calc(var(var(--base-size)) / var(--scale));
+    --sm-font-size: calc(var(--base-size) / var(--scale));
+    --xs-font-size: calc(var(--sm-font-size) / var(--scale));
     /* Generate sizes, element styles, and classes for h1, h2, h3, body. Generate sizes for h4-h6, a small size, and a large size (classes not needed, just variables).
     See https://codepen.io/jen4web/pen/KKGpKBM as an example */
 
@@ -156,6 +157,56 @@
       opacity: 0;
       translate: 0 -100%;
     }
+  }
+
+   /* footer styles */
+  footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--coffee);
+    color: var(--vanilla);
+  }
+  footer ul {
+    list-style-type: none;
+    font-size: var(--xs-font-size);
+    font-weight: 200;
+    padding: 0;
+  }
+  footer li {
+    margin: 0;
+  }
+  footer li:hover {
+    text-decoration: underline;
+  }
+  .footer-wrapper {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  footer section div {
+    flex-basis: 10%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  footer section div h3 {
+    font-size: var(--sm-font-size);
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  footer a {
+    text-decoration: none;
+    color: var(--vanilla);
+  }
+  footer .socials ul {
+    display: flex;
+    flex-flow: row;
+    gap: 0.5rem;
+  }
+  footer .socials img {
+    width: 20px;
+    height: 20px;
   }
 
   /* styleguide */
