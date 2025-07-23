@@ -1,0 +1,37 @@
+.colors div {
+  width: 5rem;
+  height: 4rem;
+  display: inline-block;
+  padding: 1rem 0;
+  margin: 1rem;
+  text-align: center;
+}
+.white {
+  background-color: var(--white);
+}
+.green {
+  background-color: var(--green);
+  color: var(--vanilla);
+}
+.coffee {
+  background-color: var(--coffee);
+  color: var(--vanilla);
+}
+.vanilla {
+  background-color: var(--vanilla);
+  border: 2px solid var(--coffee);
+}
+.lemon {
+  background-color: var(--lemon);
+}
+.mocha {
+  background-color: var(--mocha);
+  color: var(--vanilla);
+}
+.tan {
+  background-color: var(--tan);
+}
+.blue {
+  background-color: var(--blue);
+  color: var(--vanilla);
+}
