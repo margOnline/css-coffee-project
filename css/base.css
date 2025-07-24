@@ -110,7 +110,7 @@
   nav {
     display: none;
     opacity: 0;
-    transition: opacity 1s, display 1s, translate 1s;
+    transition: opacity 1s, display 1s, translate 0.5s;
     transition-behavior: allow-discrete;
     translate: 100% 0;
     background-color: var(--tan);
@@ -122,7 +122,7 @@
     z-index: 10;
     ul {
       display: flex;
-      padding: 0.5rem;
+      padding: 1rem 2.5rem;
       flex-wrap: wrap;
       list-style: none;
       flex-direction: column;
@@ -187,7 +187,7 @@
     margin: 0 auto;
   }
   footer.site-footer section div {
-    flex-basis: 10%;
+    flex-basis: 15%;
     margin: 1rem 0;
     padding: 0;
   }
